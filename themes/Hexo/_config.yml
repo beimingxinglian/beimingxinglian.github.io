@@ -547,8 +547,7 @@ subtitle:
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
   sub:
-    - 从来没有真正的绝境, 只有心灵的迷途
-    - Never really desperate, only the lost of the soul
+    - 随风而来，寻梦而去，孤独是人生的态度，寂寞是人生的常态
 
 # 手机二级菜单.
 navMenu:

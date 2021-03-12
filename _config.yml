@@ -7,7 +7,7 @@ title: 星恋
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: 张颖
 language: zh-CN
 timezone: ''
 
@@ -105,4 +105,4 @@ deploy:
   type: git
   repo: https://github.com/beimingxinglian/beimingxinglian.github.io
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
+  branch: public_branch
