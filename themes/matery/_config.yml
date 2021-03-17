@@ -4,6 +4,9 @@ menu:
   Index:
     url: /
     icon: fas fa-home
+  说说:
+    url: /informalessay
+    icon: fas fa-comment-dots
   Tags:
     url: /tags
     icon: fas fa-tags
@@ -67,8 +70,10 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 顺从本心，乐得逍遥
-  text: 佛说，笑看花开是一种好心情，静赏花落是一种好境界。 流年滚滚，尘世喧嚣，选择一种适合的姿态坐下来，做一个安静的人，有自己的喜好，有自己的原则。
+  title: 一路向前，未曾停留
+  text: 回头细想，一路走来，麻烦不断，烦心事接踵而至，每隔一段时间都感觉自己在一个坎儿上。但不管怎样，自己都走过来了。所以，我不应该把生活中琐碎的烦恼放大，它们就是我生活中的一部分，跟路边的杂草，鞋上的泥土一样，有些碍眼，但我们都奈何不了彼此。看谁耗得过谁吧。
+    #
+    # 佛说，笑看花开是一种好心情，静赏花落是一种好境界。 流年滚滚，尘世喧嚣，选择一种适合的姿态坐下来，做一个安静的人，有自己的喜好，有自己的原则。
 
 
 # Whether to display the musics.
@@ -285,7 +290,7 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
+  enable: false
   owner:
   repo:
   oauth:
@@ -615,3 +620,32 @@ bbtime:
  appId: # 你的appId
  appKey: # 你的appKey
  serverURLs: # https://你的api
+
+# 面板娘
+# npm install --save hexo-helper-live2d
+live2d:
+  enable: true
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  log: false
+  model:
+    use: live2d-widget-model-shizuku
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: false
+  react:
+    opacity: 0.7
+
+search:
+  path: search.xml
+  field: post
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
