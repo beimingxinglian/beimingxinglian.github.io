@@ -19,12 +19,12 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-#   Contact:
-#     url: /contact
-#     icon: fas fa-comments
-#   Friends:
-#     url: /friends
-#     icon: fas fa-address-book
+  Contact:
+    url: /contact
+    icon: fas fa-comments
+  # Friends:
+  #   url: /friends
+  #   icon: fas fa-address-book
   # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
@@ -86,9 +86,9 @@ music:
   autoHide: true    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require	song id / playlist id / album id / search keyword
+  id: 327151379     #require	song id / playlist id / album id / search keyword
   fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
+  autoplay: true   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'list'   # 音频循环顺序, 可选值: 'list', 'random'
@@ -598,8 +598,31 @@ background:
 # 说说 https://artitalk.js.org/
 artitalk:
   enable: true
-  appId: # xxxxx
-  appKey: # xxxxxx
+  appId: 7RzmMeEJ5d6QMnttcQ5FApfR-MdYXbMMI
+  appKey: oxCuKOhexr1M38l6yfRslm2q
+  lang: zh  # 语言
+  pageSize: 12
+  bgImg: # 输入框背景图片
+  atComment: # 评论的开关
+  color1: # 说说背景颜色 1 & 按钮颜色 1
+  color2: # 说说背景颜色 2 & 按钮颜色 2
+  color3: # 说说字体颜色 1
+  atEmoji: # 表情包
+    {
+      baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
+      bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
+      bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
+      chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
+      daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
+      dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
+      dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
+      dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
+      doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
+      facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
+      fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
+      fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png"
+    }
+
 
 # 哔哔功能配置
 # 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content
@@ -649,3 +672,20 @@ search:
 permalink_pinyin:
   enable: true
   separator: '-' # default: '-'
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date

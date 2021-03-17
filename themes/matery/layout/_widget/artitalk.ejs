@@ -1,8 +1,17 @@
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/artitalk"></script>
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
 <div id="artitalk_main"></div>
 <script>
     new Artitalk({
         appId: '<%- theme.artitalk.appId %>',
         appKey: '<%- theme.artitalk.appKey %>',
+        atEmoji: '<%- theme.artitalk.atEmoji %>',
+        atComment: '<%- theme.artitalk.atComment %>',
+        lang: '<%- theme.artitalk.lang %>',
+		pageSize: '<%- theme.artitalk.pageSize %>',
+		bgImg: '<%- theme.artitalk.bgImg %>',
+		color1: '<%- theme.artitalk.color1 %>',
+		color2: '<%- theme.artitalk.color2 %>',
+		color3: '<%- theme.artitalk.color3 %>',
     })
 </script>
+
