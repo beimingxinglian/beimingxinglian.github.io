@@ -1,5 +1,6 @@
 # main menu navigation url and icon
 # 配置菜单导航的名称、路径和图标icon.
+# https://www.w3schools.com/icons/
 menu:
   Index:
     url: /
@@ -7,6 +8,9 @@ menu:
   说说:
     url: /informalessay
     icon: fas fa-comment-dots
+  相册:
+    url: /galleries
+    icon: far fa-images
   Tags:
     url: /tags
     icon: fas fa-tags
@@ -265,7 +269,7 @@ mySkills:
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
@@ -610,16 +614,6 @@ artitalk:
   atEmoji: # 表情包
     {
       baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
-      bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
-      bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
-      chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
-      daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
-      dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
-      dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
-      dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
-      doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
-      facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
-      fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
       fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png"
     }
 
@@ -657,7 +651,7 @@ live2d:
   model:
     use: live2d-widget-model-shizuku
   display:
-    position: right
+    position: left
     width: 150
     height: 300
   mobile:
