@@ -598,7 +598,6 @@ background:
 # 说说 https://artitalk.js.org/
 artitalk:
   enable: true
-  # img: https://tdxinglian.com/medias/logo.png
   appId: 7RzmMeEJ5d6QMnttcQ5FApfR-MdYXbMMI
   appKey: oxCuKOhexr1M38l6yfRslm2q
   lang: zh  # 语言
